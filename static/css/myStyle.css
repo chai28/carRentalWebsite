@@ -1,0 +1,429 @@
+/* +++ Master Stylesheet +++
+------------------------------------------------------
+:: Template Name: Rent A Car
+:: Author: ChaiLomosbog
+:: Version: 1.0.0
+:: Created: Sept. 17, 2019
+-------------------------------------------------- */
+
+* { margin: 0; padding: 0; font-family: Lora;}
+
+header {
+  background:black;
+  }
+
+img {
+  max-width: 100%;
+}
+  .container-fluid {
+    padding: 0 !important;
+  }
+
+  #logo {
+    width: 100%;
+  }
+  /* #navbarSupportedContent {
+    justify-content: center;
+  } */
+    .myNav {
+      background: rgba(69, 69, 69, 0.3);
+      position: absolute;
+      width: 100%;
+      z-index: 2;
+    }
+    .nav-link:hover {
+      text-decoration: underline !important;
+    }
+    nav ul li {
+      display: inline;
+    }
+    .welcomeMsg {
+      color: cadetblue !important;
+    }
+    .welcomeMsgProfile {
+      float:right;
+      margin-right: 20px;
+      color: white;
+      margin-top: 60px;
+      padding-right: 30px;
+    }
+    .signIn {
+      padding-left: 0px !important;
+    }
+    .nav-item {
+      padding-right: 10px;
+      font-size: 18px;
+    }
+  #LoginModal {
+  }
+  .loginFormStyle {
+    padding: 16px;
+    background-color: white;
+  }
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+      input[type=text]:focus, input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+      }
+      /* Set a style for the submit button */
+      .registerbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+      }
+        .registerbtn:hover {
+          opacity: 1;
+        }
+      .loginLabelStyle {
+        text-align: left !important;
+      }
+        .signInbtn, .register, .resetbtn, .changepswbtn,
+        .addcarbtn, .addadmin, .backBtn,
+        .feedbackbtn {
+          padding: 8px;
+          border-radius: 10px;
+          float: right;
+          justify-content: center;
+          border: 1px solid black;
+        }
+        .register {
+          margin-top: 15px;
+        }
+        .addcarbtn {
+          margin-right: 150px;
+        }
+        .adduser {
+          float: right;
+          margin-right: 90px;
+          font-weight: bold;
+        }
+        .addadmin {
+          margin-right: 20px;
+        }
+        .backBtn {
+          padding-left: 15px;
+          padding-right: 15px;
+          margin-top: 30px;
+          margin-right: 120px;
+        }
+        .feedbackbtn {
+          margin-top: 30px;
+        }
+.bannerContainer {
+
+}
+  #slider1 {
+  }
+
+#carouselExampleControls {
+  height: 300px;
+}
+
+#slider {
+  margin-bottom: 10px;
+}
+
+#articles {
+  justify-content: center;
+  margin: 10px;
+  }
+    .articlecontainer {
+      background: rgba(69, 69, 69, 0.3);
+      color: black;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-style: groove;
+      border-radius: 5px;
+    }
+    h3, h2{
+      color: steelblue !important;
+    }
+
+footer {
+  margin-top: 20px;
+  border-top: 2px outset black;
+}
+  .top-footer {
+    background-color: rgba(0,0,0,.25);
+    padding-left: 50px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+  }
+    .footer-box {
+      padding-left: 10px;
+    }
+    .about-footer {
+      padding-top:10px;
+      padding-bottom: 5px;
+    }
+  .bottom-footer {
+    background-color: black;
+    color: white;
+    padding-left: 50px;
+    padding-right: 100px;
+  }
+    .copyright {
+      padding-top:15px;
+      padding-left: 10px;
+      font-size: 14px;
+      color: ghostwhite;
+    }
+    .social-links a{
+      float: right;
+      padding-top:10px;
+      color: ghostwhite !important;
+      font-size: 20px;
+    }
+    .social-links hover{
+      text-decoration: none !important;
+    }
+/* On screens that are less than 700px wide */
+@media screen and (max-width: 700px) {
+  .copyright {
+    justify-content: center;
+    text-align: center;
+  }
+  .social-links {
+    margin-right: 120px;
+  }
+  .sidebar a{
+    font-size: 14px !important;
+  }
+  .sidebar {padding-top: 15px !important;}
+}
+
+
+/* SideBar */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin-left: 20px;
+    margin-top: 60px;
+    float: left;
+  }
+    .openbtn:hover {
+      background-color: #444;
+    }
+
+  #main {
+    transition: margin-left .5s;
+    padding: 0;
+  }
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-width: 450px) {
+    .sidebar {padding-top: 15px !important;}
+    .sidebar a {font-size: 14px !important;}
+  }
+
+.profileForm {
+  padding: 20px;
+  margin: 70px;
+  border: 2px solid steelblue;
+  border-radius: 10px;
+}
+  .updateProfile {
+    margin-left: 800px;
+  }
+    .icon {
+      text-decoration: underline !important;
+      color: black !important;
+      font-size: 18px !important;
+    }
+    .iconfooter{
+      text-decoration: underline !important;
+      color: black !important;
+      font-size: 14px !important;
+      padding-bottom: 12px;
+    }
+    .iconfooter .textStyle .icon hover {
+      color: black !important;
+      }
+    .updatebtn, .updatecarbtn {
+      border: 1px ridge black;
+      border-radius: 5px;
+      padding: 2px 8px 2px 8px;
+      margin-right: 15px;
+    }
+
+.page-info {
+  padding-top: 70px;
+}
+  .about-text {
+    border: 1px solid silver;
+    border-radius: 10px ;
+    padding: 20px;
+  }
+
+.bookBtn {
+  float: right;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 30px;
+  border: 1px solid black;
+}
+
+.viewBtn {
+  justify-content: center;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-left: 730px;
+  border: 1px solid black;
+}
+
+.hideBtn {
+  justify-content: center;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-left: 730px;
+  border: 1px solid black;
+}
+
+.table-format {
+  border: solid 2px black;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:80px;
+  text-align:center;
+  width: 90%;
+}
+
+.body-style {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.table-header {
+  margin-top: 30px;
+  margin-left: 50px;
+  text-decoration: underline;
+  text-decoration-color: cadetblue;
+  text-decoration-style: solid;
+}
+
+.no-booking-notification {
+  justify-content: center;
+  border: 1px solid cadetblue;
+  text-align:center;
+  color: red;
+  padding-top: 5px;
+}
+
+.prof-update-msg {
+  color: mediumseagreen;
+}
+
+.table-image {
+  margin: 0 auto;
+  width: 80em;
+  max-width: 90px;
+}
+
+.actiondlte {
+  border: 1px solid cadetblue;
+  border-radius: 7px;
+  text-align:center;
+  color: red;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.actionedt {
+  border: 1px solid cadetblue;
+  border-radius: 7px;
+  text-align:center;
+  color: cadetblue;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.col-style {
+  padding-left: 0px !important;
+}
+
+.car-detail, .car-detail-req {
+  padding-right: 50px;
+  padding-left: 20px;
+}
+
+.car-detail-req {
+  padding-top: 110px;
+}
+
+.feed-back-form {
+  margin-top: 120px;
+}
+
+#feedbackmessage {
+  height: 150px;
+}
+
+.message-style {
+  max-width: 60%;
+  padding-left: 350px;
+  padding-right: 30px;
+  padding-top: 80px;
+  margin-right: 80px;
+}
+
+#gmap_canvas img {
+  max-width: none !important;
+  background: none !important
+}
+
+#admnupdate {
+  margin-left: 1000px;
+}
